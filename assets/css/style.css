@@ -49,6 +49,7 @@ img {
 .img-container {
 	width: 30%;
 	border-radius: 50%;
+	height: 7rem;
 }
 .content {
 	width: 80%;
@@ -72,6 +73,8 @@ img {
 	text-decoration: underline;
 	color: var(--secondary-blue);
 	font-size: 0.8rem;
+	margin-top: 0.4rem;
+	margin-bottom: 0 !important;
 }
 .tags {
 	width: 7rem;
@@ -233,6 +236,12 @@ h6.light_text {
 	height: 0.5rem !important;
 	border-radius: 10px !important;
 }
+
+@media screen and (max-width: 998px) {
+	.edit {
+		display: none;
+	}
+}
 @media screen and (max-width: 767px) {
 	.edit {
 		display: none;
@@ -253,6 +262,9 @@ h6.light_text {
 	}
 	.img_container {
 		width: 170px !important;
+		margin-left: auto;
+		margin-right: auto !important;
+		margin-bottom: 2rem;
 	}
 	#stars {
 		width: 0.8rem;
@@ -280,5 +292,11 @@ h6.light_text {
 	}
 	.progress {
 		width: 75%;
+	}
+	.main_profile {
+		flex-direction: column !important;
+	}
+	.content {
+		width: 100%;
 	}
 }
