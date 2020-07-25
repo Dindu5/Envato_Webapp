@@ -1,0 +1,279 @@
+/* MAIN STYLE SHEET FOR: ENVATO WEB */
+
+:root {
+	--main-font: 'Montserrat', sans-serif;
+	--primary-color: #0075ff;
+	--background-blue: #f0f7ff;
+	--secondary-blue: #1582fc;
+	--text-grey: #7c7c7c;
+	--background-black: #080013;
+	--white: #ffffff;
+}
+
+/* =================================================== */
+/* =============== 1. Universal Styles =============== */
+/* =================================================== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-family: sans-serif;
+}
+body {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+	background-color: var(--background-blue);
+}
+img {
+	width: 100%;
+	height: auto;
+}
+.card {
+	border: none !important;
+}
+/* =================================================== */
+/* ============= 2. Profile Card Styles ============== */
+/* =================================================== */
+.profile_card {
+	background-color: var(--white) !important;
+	box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.1) !important;
+	border-radius: 5px !important;
+}
+.profile_card .card-footer {
+	background-color: var(--white) !important;
+}
+.img-container {
+	width: 30%;
+	border-radius: 50%;
+}
+.content {
+	width: 80%;
+}
+.main_text {
+	font-size: 2rem;
+	color: var(--primary-color);
+	line-height: 40px;
+}
+.light_text {
+	font-size: 0.9rem;
+	color: var(--text-grey);
+}
+#stars {
+	transform: translateY(-0.4rem);
+}
+.profile_info2 p {
+	margin-bottom: 0 !important;
+}
+.mail_link {
+	text-decoration: underline;
+	color: var(--secondary-blue);
+	font-size: 0.8rem;
+}
+.tags {
+	width: 7rem;
+	background-color: #f2f2f2;
+	border-radius: 5px;
+	height: 2rem;
+}
+.tags p {
+	margin-bottom: auto !important;
+	margin-top: auto !important;
+}
+.edit {
+	background-color: var(--primary-color);
+	color: var(--white);
+	border-radius: 5px;
+	padding: 0.6rem 1rem;
+}
+.edit:hover,
+.edit:focus,
+.edit:active {
+	text-decoration: none;
+	background-color: var(--background-black);
+	transition: all 0.6s;
+	color: var(--white);
+}
+/* Card Footer */
+.card-footer h2 {
+	font-size: 2rem;
+	color: var(--primary-color);
+	margin-bottom: 2rem;
+}
+h6.light_text {
+	margin-bottom: 0 !important;
+}
+/* =================================================== */
+/* ============= 3. Activity Card Styles ============= */
+/* =================================================== */
+.activity_card {
+	background-color: var(--white) !important;
+	box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.1) !important;
+	border-radius: 5px !important;
+}
+.top h4 {
+	font-size: 1.2rem;
+	color: var(--text-grey);
+	font-weight: 600;
+	margin-bottom: 0 !important;
+}
+.activity_icon {
+	padding: 1.5rem;
+	border-radius: 50%;
+	background-color: #f0f7ff;
+}
+.middle {
+	margin-top: 0.3rem;
+	margin-bottom: 2rem;
+}
+.middle h2 {
+	font-size: 2rem;
+	color: var(--text-grey);
+	font-weight: 600;
+	margin-bottom: 0 !important;
+}
+.percent,
+.percent_green {
+	margin-bottom: 0 !important;
+	font-size: 1.1rem;
+	font-weight: 500;
+}
+.percent {
+	color: #ea001b;
+}
+.percent_green {
+	color: #3bc76a;
+}
+.bottom p.light_text {
+	margin-bottom: 0 !important;
+}
+
+/* =================================================== */
+/* =============== 4. Chart Card Styles ============== */
+/* =================================================== */
+.pie,
+.bar {
+	width: 50%;
+}
+.pie_description {
+}
+.top_pie,
+.top_bar,
+.progress_top {
+	border-bottom: 2px solid #c4c4c4;
+	padding: 0.6rem;
+}
+.top_pie h3,
+.top_bar h3,
+.progress_bars h3 {
+	color: #f58b11;
+}
+.pie_description h3 {
+	font-size: 2rem;
+	color: #3b75b1;
+}
+.pie_description h3.right {
+	border-left: 1px solid #c4c4c4;
+}
+.pie_description h4 {
+	margin: 0 !important;
+	border-bottom: 1px solid #c4c4c4;
+}
+.doughnut_chart,
+.bar_chart {
+	width: 80%;
+	margin-top: 1rem;
+}
+.ct-bar {
+	stroke-width: 25px;
+}
+.ct-series-a .ct-slice-donut {
+	/* give the donut slice a custom colour */
+	stroke: #f58b11;
+	/* customize stroke width of the donut slices in CSS. Note that this property is already set in JavaScript and label positioning also relies on this. In the right situation though it can be very useful to style this property. You need to use !important to override the style attribute
+	stroke-width: 5px !important;
+	/* create modern looking rounded donut charts
+	stroke-linecap: round;*/
+}
+.ct-series-b .ct-slice-donut {
+	stroke: #eef2f7;
+}
+.ct-series-a .ct-bar {
+	/* give the donut slice a custom colour */
+	stroke: #4d9eff;
+	/* customize stroke width of the donut slices in CSS. Note that this property is already set in JavaScript and label positioning also relies on this. In the right situation though it can be very useful to style this property. You need to use !important to override the style attribute
+	stroke-width: 5px !important;
+	/* create modern looking rounded donut charts
+	stroke-linecap: round;*/
+}
+.ct-horizontal {
+	stroke: #4d9dff00;
+	stroke-width: 1px;
+	stroke-dasharray: none !important;
+}
+.ct-vertical {
+	stroke: #4d9dff00;
+	stroke-width: 1px;
+	stroke-dasharray: none !important;
+}
+.ct-label.ct-vertical.ct-start {
+	font-size: 1rem;
+	font-weight: 600;
+	color: var(--text-grey);
+}
+.progress_bars p {
+	margin-bottom: 0 !important;
+	font-weight: 600;
+	color: #7c7c7c !important;
+}
+.progress {
+	width: 90%;
+	height: 0.5rem !important;
+	border-radius: 10px !important;
+}
+@media screen and (max-width: 767px) {
+	.edit {
+		display: none;
+	}
+	.main_text {
+		font-size: 1.5rem;
+		line-height: 20px;
+	}
+	.sub_head {
+		font-size: 1.2rem !important;
+	}
+	.light_text {
+		font-size: 1rem;
+	}
+	.sub_text {
+		font-size: 0.8rem !important;
+		margin-bottom: 0 !important;
+	}
+	.img_container {
+		width: 170px !important;
+	}
+	#stars {
+		width: 0.8rem;
+		margin-top: 0.5rem !important;
+	}
+	.tags {
+		width: 5rem;
+		height: 1.5rem;
+	}
+	.tags p {
+		font-size: 0.6rem;
+	}
+	.location_img {
+		width: 0.6rem;
+	}
+	.chart_body {
+		flex-direction: column;
+	}
+	.pie,
+	.bar {
+		width: 100%;
+	}
+	.progress {
+		width: 75%;
+	}
+}
