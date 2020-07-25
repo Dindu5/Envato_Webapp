@@ -29,6 +29,9 @@ img {
 	width: 100%;
 	height: auto;
 }
+.nav-item img {
+	width: auto !important;
+}
 .card {
 	border: none !important;
 }
@@ -271,6 +274,9 @@ h6.light_text {
 	.pie,
 	.bar {
 		width: 100%;
+	}
+	.pie {
+		margin-bottom: 1rem;
 	}
 	.progress {
 		width: 75%;
