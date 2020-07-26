@@ -316,6 +316,12 @@ h6.light_text {
 	.content {
 		width: 100%;
 	}
+	.ct-bar {
+		stroke-width: 15px;
+	}
+	.ct-slice-donut {
+		stroke-width: 40px;
+	}
 }
 @media screen and (max-width: 543px) {
 	.img_container {
@@ -340,5 +346,14 @@ h6.light_text {
 	}
 	.middle {
 		margin-bottom: 1.4rem;
+	}
+	.ct-bar {
+		stroke-width: 10px;
+	}
+	.ct-slice-donut {
+		stroke-width: 20px;
+	}
+	.progress {
+		height: 0.3rem !important;
 	}
 }
