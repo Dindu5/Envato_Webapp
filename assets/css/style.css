@@ -347,6 +347,13 @@ h6.light_text {
 	.middle {
 		margin-bottom: 1.4rem;
 	}
+	.top_pie,
+	.top_bar,
+	.progress_top {
+		border-bottom: 1px solid #c4c4c4;
+		padding: 0.6rem;
+	}
+
 	.ct-bar {
 		stroke-width: 10px;
 	}
