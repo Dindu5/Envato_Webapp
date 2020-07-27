@@ -85,3 +85,34 @@ chart.on('created', function() {
 	}
 	window.__anim21278907124 = setTimeout(chart.update.bind(chart), 10000);
 });
+
+$(document).ready(function() {
+	if ($(window).width() < 767) {
+		var owl = $('#slide').addClass('owl-carousel');
+
+		$('.owl-carousel').owlCarousel({
+			items: 1,
+			loop: true,
+			theme: 'owl-theme',
+			slideSpeed: 500,
+			autoplay: true,
+			autoplayTimeout: 2500,
+			autoplayHoverPause: true
+		});
+	} else {
+		var owl = $('#slide').removeClass('owl-carousel');
+	}
+});
+$(window).resize(function() {
+	if ($(window).width() < 767) {
+		var owl = $('#slide').addClass('owl-carousel');
+
+		$('.owl-carousel').owlCarousel({
+			items: 1,
+			loop: true,
+			theme: 'owl-theme'
+		});
+	} else {
+		var owl = $('#slide').removeClass('owl-carousel');
+	}
+});

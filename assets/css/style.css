@@ -29,6 +29,9 @@ img {
 	width: 100%;
 	height: auto;
 }
+.nav-item img {
+	width: auto !important;
+}
 .card {
 	border: none !important;
 }
@@ -46,6 +49,7 @@ img {
 .img-container {
 	width: 30%;
 	border-radius: 50%;
+	height: 7rem;
 }
 .content {
 	width: 80%;
@@ -54,13 +58,15 @@ img {
 	font-size: 2rem;
 	color: var(--primary-color);
 	line-height: 40px;
+	margin-bottom: 0 !important;
 }
 .light_text {
 	font-size: 0.9rem;
 	color: var(--text-grey);
+	margin-bottom: 0 !important;
 }
 #stars {
-	transform: translateY(-0.4rem);
+	transform: translateY(-0.2rem);
 }
 .profile_info2 p {
 	margin-bottom: 0 !important;
@@ -69,6 +75,7 @@ img {
 	text-decoration: underline;
 	color: var(--secondary-blue);
 	font-size: 0.8rem;
+	margin-bottom: 0 !important;
 }
 .tags {
 	width: 7rem;
@@ -95,10 +102,13 @@ img {
 	color: var(--white);
 }
 /* Card Footer */
+.card-footer {
+	border-top: 2px solid #c4c4c4 !important;
+}
 .card-footer h2 {
 	font-size: 2rem;
 	color: var(--primary-color);
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 }
 h6.light_text {
 	margin-bottom: 0 !important;
@@ -154,8 +164,6 @@ h6.light_text {
 .pie,
 .bar {
 	width: 50%;
-}
-.pie_description {
 }
 .top_pie,
 .top_bar,
@@ -231,6 +239,35 @@ h6.light_text {
 	height: 0.5rem !important;
 	border-radius: 10px !important;
 }
+.owl-dot.active span {
+	background: var(--primary-color) !important;
+}
+.owl-dots {
+	display: flex;
+	justify-content: center;
+}
+.owl-dots .owl-dot span {
+	width: 10px;
+	height: 10px;
+	margin: 5px 7px;
+	background: #d6d6d6;
+	display: block;
+	backface-visibility: visible;
+	-webkit-backface-visibility: visible;
+	transition: opacity .2s ease;
+	border-radius: 30px;
+}
+
+@media screen and (max-width: 998px) {
+	.edit {
+		display: none;
+	}
+	#stars {
+		width: 1rem !important;
+		transform: translateY(-0.1rem);
+		margin-left: 5px;
+	}
+}
 @media screen and (max-width: 767px) {
 	.edit {
 		display: none;
@@ -251,6 +288,9 @@ h6.light_text {
 	}
 	.img_container {
 		width: 170px !important;
+		margin-left: auto;
+		margin-right: auto !important;
+		margin-bottom: 2rem;
 	}
 	#stars {
 		width: 0.8rem;
@@ -266,6 +306,15 @@ h6.light_text {
 	.location_img {
 		width: 0.6rem;
 	}
+	.card-footer {
+		border-top: 1px solid #c4c4c4 !important;
+	}
+
+	/* === ACTIVITY Card ===== */
+	.activity_icon {
+		padding: 1.5rem;
+	}
+	/* ==== Chart And Progress Bars === */
 	.chart_body {
 		flex-direction: column;
 	}
@@ -273,7 +322,70 @@ h6.light_text {
 	.bar {
 		width: 100%;
 	}
+	.pie {
+		margin-bottom: 1rem;
+	}
 	.progress {
 		width: 75%;
+	}
+	.main_profile {
+		flex-direction: column !important;
+	}
+	.content {
+		width: 100%;
+	}
+	.ct-bar {
+		stroke-width: 15px;
+	}
+	.ct-slice-donut {
+		stroke-width: 40px;
+	}
+	#slide {
+		margin-left: 0 !important;
+	}
+	.owl-item div {
+		padding-left: 6px !important;
+		padding-right: 6px !important;
+	}
+}
+@media screen and (max-width: 543px) {
+	.img_container {
+		width: 140px !important;
+	}
+	.main_text {
+		font-size: 4rem;
+		line-height: 20px;
+	}
+	.sub_head {
+		font-size: 1.2rem !important;
+	}
+	.light_text {
+		font-size: 0.9rem;
+	}
+	.activity_icon {
+		padding: 1.2rem;
+		width: 22%;
+	}
+	.top h4 {
+		font-size: 1rem;
+	}
+	.middle {
+		margin-bottom: 1.4rem;
+	}
+	.top_pie,
+	.top_bar,
+	.progress_top {
+		border-bottom: 1px solid #c4c4c4;
+		padding: 0.6rem;
+	}
+
+	.ct-bar {
+		stroke-width: 10px;
+	}
+	.ct-slice-donut {
+		stroke-width: 20px;
+	}
+	.progress {
+		height: 0.3rem !important;
 	}
 }
