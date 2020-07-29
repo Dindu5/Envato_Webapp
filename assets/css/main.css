@@ -12,7 +12,7 @@ body {
 
 .navbar-toggler:focus
 {
-  outline: 5px auto #0375fe;
+  outline: 5px auto #362F74;
 }
 
 .header__link {
@@ -22,7 +22,7 @@ body {
   background-image: url('../images/menu.svg');
 }
 .navbar-collapse {
-  background-color: #0075ff;
+  background-color: #362F74;
   margin-right: 0;
   margin-left: 0;
 }
@@ -45,7 +45,7 @@ body {
   width: 80px;
   bottom: 2px;
   position: absolute;
-  border-bottom: 4px solid #0075ff;
+  border-bottom: 4px solid #362F74;
 }
 
 .main-content .header {
@@ -83,7 +83,7 @@ body {
 @media (min-width: 992px) {
   .sidebar {
     width: 200px;
-    background-color: #0075ff;
+    background-color: #362F74;
     font-weight: 600;
   }
 
@@ -111,12 +111,12 @@ body {
 
   /*Active state*/
   .sidebar__link-active {
-    color: #0075ff;
+    color: #362F74;
   }
 
   .sidebar__list-active {
     background-color: #f0f7ff;
-    color: #0075ff;
+    color: #362F74;
   }
 
   .sidebar__sign-out {
@@ -141,7 +141,7 @@ body {
 
   .sidebar__list-active .dashboard-icon, .sidebar__list-active .sign-icon
   {
-    fill: #0075FF;
+    fill: #362F74;
   }
 }
 
@@ -177,5 +177,5 @@ body {
 
 .sidebar__list-active .dashboard-icon, .sidebar__list-active .sign-icon
 {
-  fill: #0075FF;
+  fill: #362F74;
 }

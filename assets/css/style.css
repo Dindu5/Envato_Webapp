@@ -1,10 +1,10 @@
-/* MAIN STYLE SHEET FOR: ENVATO WEB */
+/* MAIN STYLE SHEET FOR: ENVATO WEB : PUBLISHER OVERVIEW */
 
 :root {
 	--main-font: 'Montserrat', sans-serif;
-	--primary-color: #0075ff;
+	--primary-color: #362f74;
 	--background-blue: #f0f7ff;
-	--secondary-blue: #1582fc;
+	--secondary-blue: #362f74;
 	--text-grey: #7c7c7c;
 	--background-black: #080013;
 	--white: #ffffff;
@@ -97,7 +97,7 @@ img {
 .edit:focus,
 .edit:active {
 	text-decoration: none;
-	background-color: var(--background-black);
+	background-color: #1f1a4e;
 	transition: all 0.6s;
 	color: var(--white);
 }
@@ -109,6 +109,15 @@ img {
 	font-size: 2rem;
 	color: var(--primary-color);
 	margin-bottom: 1rem;
+}
+.social_icon_container div {
+	width: 60%;
+}
+.social_icon_container .second_row {
+	width: 40%;
+}
+.social_icons {
+	width: 3rem !important;
 }
 h6.light_text {
 	margin-bottom: 0 !important;
@@ -161,6 +170,7 @@ h6.light_text {
 /* =================================================== */
 /* =============== 4. Chart Card Styles ============== */
 /* =================================================== */
+
 .pie,
 .bar {
 	width: 50%;
@@ -178,7 +188,7 @@ h6.light_text {
 }
 .pie_description h3 {
 	font-size: 2rem;
-	color: #3b75b1;
+	color: #362f74;
 }
 .pie_description h3.right {
 	border-left: 1px solid #c4c4c4;
@@ -208,7 +218,7 @@ h6.light_text {
 }
 .ct-series-a .ct-bar {
 	/* give the donut slice a custom colour */
-	stroke: #4d9eff;
+	stroke: #362f74;
 	/* customize stroke width of the donut slices in CSS. Note that this property is already set in JavaScript and label positioning also relies on this. In the right situation though it can be very useful to style this property. You need to use !important to override the style attribute
 	stroke-width: 5px !important;
 	/* create modern looking rounded donut charts
@@ -239,8 +249,15 @@ h6.light_text {
 	height: 0.5rem !important;
 	border-radius: 10px !important;
 }
+.progress-bar {
+	background-color: var(--primary-color) !important;
+}
 .owl-dot.active span {
 	background: var(--primary-color) !important;
+}
+.owl-dot span {
+	border: 1px solid var(--primary-color);
+	background: none !important;
 }
 .owl-dots {
 	display: flex;
@@ -257,6 +274,10 @@ h6.light_text {
 	transition: opacity .2s ease;
 	border-radius: 30px;
 }
+
+/* =================================================== */
+/* ================= 5. Media Queries ================ */
+/* =================================================== */
 
 @media screen and (max-width: 998px) {
 	.edit {
@@ -318,6 +339,25 @@ h6.light_text {
 	.chart_body {
 		flex-direction: column;
 	}
+	.social_icon_container {
+		flex-direction: column;
+	}
+	.social_icons {
+		width: 1.5rem;
+	}
+	.second_row {
+		justify-content: space-between;
+		margin-top: 0.8rem;
+	}
+	.social_icon_container div {
+		width: 100%;
+	}
+	.social_icon_container .second_row {
+		width: 100%;
+	}
+	.social_icons {
+		width: 2rem !important;
+	}
 	.pie,
 	.bar {
 		width: 100%;
@@ -338,15 +378,15 @@ h6.light_text {
 		stroke-width: 15px;
 	}
 	.ct-slice-donut {
-		stroke-width: 40px;
+		stroke-width: 30px !important;
 	}
 	#slide {
 		margin-left: 0 !important;
 	}
-	.owl-item div {
+	/*.owl-item div {
 		padding-left: 6px !important;
 		padding-right: 6px !important;
-	}
+	}*/
 }
 @media screen and (max-width: 543px) {
 	.img_container {
@@ -362,6 +402,11 @@ h6.light_text {
 	.light_text {
 		font-size: 0.9rem;
 	}
+
+	.social_icons {
+		width: 1.5rem !important;
+	}
+
 	.activity_icon {
 		padding: 1.2rem;
 		width: 22%;
