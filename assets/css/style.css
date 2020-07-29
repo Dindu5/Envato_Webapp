@@ -150,7 +150,7 @@ h6.light_text {
 }
 .activity_card:hover .card-body .top h4,
 .activity_card:hover .card-body .middle h2,
-.activity_card:hover .card-body .bottom p {
+.activity_card:hover .card-body .bottom p.light_text {
 	color: var(--white);
 }
 
