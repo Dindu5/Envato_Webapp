@@ -129,20 +129,29 @@ h6.light_text {
 	background-color: var(--white) !important;
 	box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.1) !important;
 	border-radius: 5px !important;
+	overflow: hidden;
 }
 .top h4 {
 	font-size: 1.2rem;
 	color: var(--text-grey);
 	font-weight: 600;
 	margin-bottom: 0 !important;
+	z-index: 1;
 }
 .activity_icon {
 	padding: 1.5rem;
 	border-radius: 50%;
 	background-color: #f0f7ff;
+	transition: all 0.8s;
 }
 .activity_card:hover .card-body .top div {
-	box-shadow: 300px #f0f7ff;
+	box-shadow: 0 0 0 400px #362f74;
+	transition: all 0.8s;
+}
+.activity_card:hover .card-body .top h4,
+.activity_card:hover .card-body .middle h2,
+.activity_card:hover .card-body .bottom p {
+	color: var(--white);
 }
 
 .middle {
