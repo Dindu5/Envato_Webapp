@@ -122,6 +122,9 @@ img {
 h6.light_text {
 	margin-bottom: 0 !important;
 }
+.hidden {
+	display: none !important;
+}
 /* =================================================== */
 /* ============= 3. Activity Card Styles ============= */
 /* =================================================== */
@@ -327,9 +330,13 @@ h6.light_text {
 		margin-bottom: 2rem;
 	}
 	#stars {
-		width: 0.8rem;
-		margin-top: 0.5rem !important;
+		width: 0.8rem !important;
+		margin-top: 0.3rem !important;
 	}
+	.hidden {
+		display: flex !important;
+	}
+
 	.tags {
 		width: 5rem;
 		height: 1.5rem;
@@ -402,6 +409,11 @@ h6.light_text {
 	}*/
 }
 @media screen and (max-width: 543px) {
+	#stars {
+		width: 0.5rem !important;
+		margin-top: 0.2rem !important;
+	}
+
 	.img_container {
 		width: 140px !important;
 	}
