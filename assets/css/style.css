@@ -359,12 +359,11 @@ h6.light_text {
 	.card-footer {
 		border-top: 1px solid #c4c4c4 !important;
 	}
-
 	/* === ACTIVITY Card ===== */
-	/*
+	
 	.activity_card{
 		box-shadow: none !important;
-	}*/
+	}
 	.activity_icon {
 		padding: 1.5rem;
 	}
