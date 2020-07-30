@@ -29,8 +29,8 @@ img {
 	width: 100%;
 	height: auto;
 }
-.nav-item img {
-	width: auto !important;
+a:hover {
+	text-decoration: none;
 }
 .card {
 	border: none !important;
@@ -55,7 +55,7 @@ img {
 	width: 80%;
 }
 .main_text {
-	font-size: 2rem;
+	font-size: 1.8rem;
 	color: var(--primary-color);
 	line-height: 40px;
 	margin-bottom: 0 !important;
@@ -76,6 +76,9 @@ img {
 	color: var(--secondary-blue);
 	font-size: 0.8rem;
 	margin-bottom: 0 !important;
+}
+.mail_link:hover {
+	text-decoration: underline;
 }
 .tags {
 	width: 7rem;
@@ -106,7 +109,8 @@ img {
 	border-top: 2px solid #c4c4c4 !important;
 }
 .card-footer h2 {
-	font-size: 2rem;
+	font-size: 1.8rem;
+	font-weight: 500;
 	color: var(--primary-color);
 	margin-bottom: 1rem;
 }
@@ -117,7 +121,7 @@ img {
 	width: 40%;
 }
 .social_icons {
-	width: 3rem !important;
+	width: 2.7rem !important;
 }
 h6.light_text {
 	margin-bottom: 0 !important;
