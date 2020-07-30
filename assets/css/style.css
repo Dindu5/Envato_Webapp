@@ -537,13 +537,6 @@ h6.light_text {
 	.ct-label.ct-vertical.ct-start {
 		font-size: 0.8rem;
 	}
-	.top_pie,
-	.top_bar,
-	.progress_top {
-		border-bottom: 1px solid #c4c4c4;
-		padding: 0.6rem;
-	}
-
 	.ct-bar {
 		stroke-width: 10px;
 	}
@@ -554,3 +547,38 @@ h6.light_text {
 		height: 0.3rem !important;
 	}
 }
+@media screen and (max-width: 330px) {
+	.profile_info1 div.align-items-center {
+		flex-direction: column;
+	}
+	.profile_info1 h2.sub_head,
+	.profile_info1 p.sub_text {
+		margin-bottom: 0.5rem !important;
+	}
+	.profile_info1 div.text-right {
+		flex-direction: column;
+		align-items: center;
+		margin-top: 1rem !important;
+	}
+	#stars {
+		width: 0.4rem !important;
+		margin-top: -0.3rem !important;
+	}
+	.profile_info2 {
+		margin: 0 !important;
+		justify-content: center;
+	}
+	.profile_info3 {
+		margin: 0.3rem !important;
+		justify-content: center !important;
+	}
+	.card-footer h2 {
+		margin-left: 0rem;
+		text-align: center;
+	}
+	.social_icon_container .col {
+		padding-left: 1px !important;
+		padding-right: 1px !important;
+	}
+}
+
