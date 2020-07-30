@@ -152,7 +152,7 @@ h6.light_text {
 	transition: all 0.8s;
 }
 .activity_card:hover .card-body .top div {
-	box-shadow: 0 0 0 80vw #362f74;
+	box-shadow: 0 0 0 30vw #362f74;
 	transition: all 0.8s;
 }
 .activity_card:hover .card-body .top h4,
@@ -367,6 +367,11 @@ h6.light_text {
 	.activity_icon {
 		padding: 1.5rem;
 	}
+	.activity_card:hover .card-body .top div {
+		box-shadow: 0 0 0 80vw #362f74;
+		transition: all 0.8s;
+	}
+	
 	/* ==== Chart And Progress Bars === */
 	.chart_body {
 		flex-direction: column;
