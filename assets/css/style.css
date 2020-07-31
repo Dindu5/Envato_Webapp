@@ -369,9 +369,7 @@ h6.light_text {
 	}
 	.activity_card:hover .card-body .top div {
 		box-shadow: 0 0 0 80vw #362f74;
-		transition: all 0.8s;
 	}
-	
 	/* ==== Chart And Progress Bars === */
 	.chart_body {
 		flex-direction: column;
@@ -447,11 +445,12 @@ h6.light_text {
 	.light_text {
 		font-size: 0.9rem;
 	}
-
 	.social_icons {
 		width: 1.5rem !important;
 	}
-
+	.pie_description h3 {
+		font-size: 1.4rem;
+	}
 	.activity_icon {
 		padding: 1.2rem;
 		width: 22%;
@@ -512,6 +511,9 @@ h6.light_text {
 	.tags {
 		width: 3.7rem;
 		height: 1.5rem;
+	}
+	.pie_description h3 {
+		font-size: 1.2rem;
 	}
 	.tags p {
 		font-size: 0.5rem;
